@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    /*Colores*/
+    --color1: #000;
+    --color2: #fff;
+    --color3: #8C52FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.main {
+    max-width: 1400px;
+}
+
+.main section {
+    margin-top: 20px;
+}
+
+.main section article {
+    margin-top: 20px;
+}
+
+/*Portada*/
+
+.presentacion {
+    display: flex;
+    flex-direction:column;
+}
+
+.habilidades-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habilidades-iconos div {
+    width: 20%;
+}
+
+.habilidades-iconos i {
+    font-size: 2.5em;
+}
+
+/*Medias*/
+
+@media (min-width: 576px){
+    
+}
+@media (min-width: 992px){
+    /*aca hace el corte*/
+    .presentacion {
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .presentacion-contenedor, .habilidades-contenedor {
+        width: 45%;
+        
+    }
+}
+@media (min-width: 1200px){
+    
+}
+@media (min-width: 1400px){}
+
