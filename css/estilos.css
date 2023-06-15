@@ -78,9 +78,10 @@ body {
 .contenedor-presentacion {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     gap: 20px;
-    
+    border: solid 1px black;
 }
 
 .presentacion, .habilidades {
@@ -88,7 +89,7 @@ body {
     height: max-content;
     display: flex;
     flex-direction: column;
-    
+    border: solid 1px red;
 }
 
 
@@ -118,16 +119,21 @@ body {
 
 /*Portfolio*/
 
-.proyectos {
+.contenedor-portfolio {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
     border: solid 1px black;
-    display: none;
 }
 
 .proyecto {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
     height: 200px;
     border: solid 1px red;
 }
@@ -137,7 +143,6 @@ body {
 .contacto-contenedor {
     display: flex;
     justify-content: center;
-    display: none;
 }
 
 .contacto-contenedor form {
@@ -153,6 +158,10 @@ body {
 @media (min-width: 576px){
     .habilidades-iconos div {
         width: 21%;
+    }
+
+    .proyecto {
+        width: 50%;
     }
 }
 @media (min-width: 992px){
@@ -173,18 +182,15 @@ body {
     }
 
     /*Porfolio*/
-    .proyectos {
+    .contenedor-portfolio {
         flex-direction: row;
-        justify-content: space-between;
     }
 
     .proyecto {
-        width: 30%;
+        width: 25%;
     }
 
-    .contacto-contenedor form {
-        width: 50%;
-    }
+   
 }
 @media (min-width: 1200px){}
 @media (min-width: 1400px){}
