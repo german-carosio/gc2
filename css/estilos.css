@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 body {
@@ -36,7 +36,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 0 20px;
 }
 
 .main, .header, .footer {
@@ -47,7 +46,7 @@ body {
 /*Header*/
 
 .header {
-    padding-top: 20px;
+    padding: 20px;
 }
 .in-progress {
     color: red;
@@ -55,15 +54,26 @@ body {
 
 /*Main*/
 
-.main section {
-    margin:  40px 0 40px 0 ;
-      
+.portada, .portfolio,.contacto {
+    margin:  40px 0 40px 0; 
+}
+
+.logo, .portada, .portfolio,.contacto {
+    margin:  0 20px 20px 20px;
+    padding: 10px;
 }
 /*Logo*/
 
 
+
+
+.main  {
+    background-color: var(--color2);
+    border-radius: 6px;
+    color: var(--color1);
+}
+
 .cv {
-    margin-top: 20px;
     border: none;
     padding: 10px;
     background-color: var(--color4);
@@ -72,6 +82,7 @@ body {
 
 .cv a {
     color: var(--color2);
+    font-weight: bolder;
 }
 /*Portada*/
 
@@ -81,7 +92,10 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    border: solid 1px black;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 6px;
+    
 }
 
 .presentacion, .habilidades {
@@ -89,7 +103,6 @@ body {
     height: max-content;
     display: flex;
     flex-direction: column;
-    border: solid 1px red;
 }
 
 
@@ -99,7 +112,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
+    border-radius: 6px;
 }
 
 .habilidades-iconos div {
@@ -108,9 +121,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 1px var(--color3);
+    border-radius: 6px;
     padding: 10px;
-    
+    border: solid 2px var(--color3);
 }
 
 .habilidades-iconos i {
@@ -118,7 +131,11 @@ body {
 }
 
 /*Portfolio*/
-
+.portfolio {
+    background-color: var(--color2);
+    border-radius: 6px;
+    color: var(--color1);
+}
 .contenedor-portfolio {
     display: flex;
     flex-direction: column;
@@ -126,7 +143,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    border: solid 1px black;
 }
 
 .proyecto {
@@ -135,10 +151,18 @@ body {
     align-items: center;
     width: 80%;
     height: 200px;
-    border: solid 1px red;
+    border: solid 2px var(--color4);
+    border-radius: 6px;
+    
 }
 
 /*Contacto*/
+
+.contacto {
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 6px;
+}
 
 .contacto-contenedor {
     display: flex;
@@ -149,19 +173,39 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
+    gap: 10px;
+}
+
+.contacto-contenedor form input, textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
 }
 
 
+
+.contacto-contenedor form button{
+    padding: 10px;
+    border: none;
+    background-color: var(--color4);
+    border-radius: 6px;
+    color: var(--color2);
+    font-weight: bolder;
+}
 
 /*Medias*/
 
 @media (min-width: 576px){
     .habilidades-iconos div {
-        width: 21%;
+        width: 25%;
     }
 
     .proyecto {
         width: 50%;
+    }
+
+    .contacto-contenedor form {
+        width: 60%;
     }
 }
 @media (min-width: 992px){
@@ -181,6 +225,8 @@ body {
         width: 45%;
     }
 
+   
+
     /*Porfolio*/
     .contenedor-portfolio {
         flex-direction: row;
@@ -188,6 +234,10 @@ body {
 
     .proyecto {
         width: 25%;
+    }
+
+    .contacto-contenedor form {
+        width: 40%;
     }
 
    
