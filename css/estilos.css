@@ -23,7 +23,7 @@ p, a, li, i {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 h2 {
@@ -36,6 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px 0 20px;
 }
 
 .main, .header, .footer {
@@ -46,7 +47,8 @@ body {
 /*Header*/
 
 .header {
-    padding: 20px;
+    padding:  20px 0 20px 0;
+  
 }
 .in-progress {
     color: red;
@@ -55,16 +57,11 @@ body {
 /*Main*/
 
 .portada, .portfolio,.contacto {
-    margin:  40px 0 40px 0; 
+    margin:  20px 0 20px 0; 
 }
 
-.logo, .portada, .portfolio,.contacto {
-    margin:  0 20px 20px 20px;
-    padding: 10px;
-}
+
 /*Logo*/
-
-
 
 
 .main  {
@@ -116,14 +113,14 @@ body {
 }
 
 .habilidades-iconos div {
-    width: 35%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
     padding: 10px;
-    border: solid 2px var(--color3);
+    
 }
 
 .habilidades-iconos i {
@@ -151,7 +148,7 @@ body {
     align-items: center;
     width: 80%;
     height: 200px;
-    border: solid 2px var(--color4);
+    border: solid 2px var(--color3);
     border-radius: 6px;
     
 }
@@ -159,20 +156,22 @@ body {
 /*Contacto*/
 
 .contacto {
-    background-color: var(--color1);
-    color: var(--color2);
-    border-radius: 6px;
+    padding-bottom: 30px;
 }
 
 .contacto-contenedor {
     display: flex;
     justify-content: center;
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 6px;
+    padding: 20px;
 }
 
 .contacto-contenedor form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
     gap: 10px;
 }
 
@@ -181,8 +180,6 @@ body {
     border: none;
     border-radius: 6px;
 }
-
-
 
 .contacto-contenedor form button{
     padding: 10px;
@@ -193,11 +190,69 @@ body {
     font-weight: bolder;
 }
 
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.redes {
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.redes i {
+    font-size: 3em;
+}
+
+.redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(25,195,33);
+    border-radius: 100%;
+    padding: 8px 10px;
+}
+
+.whatsapp i {
+    color: var(--color2);
+    font-size: 2em;
+}
+
 /*Medias*/
 
 @media (min-width: 576px){
     .habilidades-iconos div {
-        width: 25%;
+        width: 22%;
     }
 
     .proyecto {
@@ -212,7 +267,7 @@ body {
     /*aca hace el corte*/
 
     body {
-        padding: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
     }
 
     .contenedor-presentacion {
@@ -242,6 +297,10 @@ body {
 
    
 }
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
+    .habilidades-iconos div {
+        width: 20%;
+    }
+}
 @media (min-width: 1400px){}
 
